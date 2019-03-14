@@ -43,10 +43,10 @@ public class GenericComparator<T> implements Comparator<T> {
     }
     
     public int getComparator(T o1, T o2) {
-	return this.invokeGetters(o1).compareTo(this.invokeGetters(o2));
+	return this.invokeGetter(o1).compareTo(this.invokeGetter(o2));
     }
     
-    public <U extends Comparable<U>> U invokeGetters(Object o) {
+    public <U extends Comparable<U>> U invokeGetter(Object o) {
 	PropertyDescriptor pd;
 	U field = null;
 	try {
@@ -54,7 +54,7 @@ public class GenericComparator<T> implements Comparator<T> {
 	    Method getterMethod = pd.getReadMethod();
 	    /*
 	     *  Need to ensure that there is no ClassCastException
-	     *  TODO : Need to think of use cases for Execption
+	     *  TODO : Need to think of use cases for Execption or a better way of impl
 	     */
 	    field = (U) getterMethod.invoke(o);
 	    

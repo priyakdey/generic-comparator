@@ -19,20 +19,22 @@ public class Driver {
     }
 
     public static void main(String[] args) {
+	
+	System.out.println("Natural Sorting Order : ");
 	naturalSorting();
 	
-	System.out.println("---------------");
+	System.out.println("------------------------------------------------------------");
 	System.out.println(">> Enter the field by which to sort : ");
 	
 	try {
-	    sort(br.readLine());
+	    dynamicSort(br.readLine());
 	}
 	catch(IOException e) {
 	    System.out.println(e.getMessage());
 	}
     }
 
-    private static void sort(String input) {
+    private static void dynamicSort(String input) {
 	Collections.sort(students, new GenericComparator<Student>(input));
 	students.stream().forEach(System.out::println);
 	
