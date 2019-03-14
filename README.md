@@ -14,5 +14,5 @@ This is a generic comparator which does help sort List of UserDefined Objects by
  * In case the associative objects are having association relations in them, logic needs to be 
  * implemented accordingly (most likely to be sorted by any Java pre-defined type Object)
  *
- * @author  priyakdey
+ *
  */
