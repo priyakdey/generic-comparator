@@ -1,6 +1,6 @@
 package io.priyak.genericcomparator.model;
 
-public class Student implements Comparable<Student> {
+public class Student{
 
     private Integer rollNo;
     private String firstName;
@@ -39,10 +39,10 @@ public class Student implements Comparable<Student> {
 	this.address = address;
     }
 
-    @Override
-    public int compareTo(Student o) {
-	return this.rollNo.compareTo(o.rollNo);
-    }
+//    @Override
+//    public int compareTo(Student o) {
+//	return this.rollNo.compareTo(o.rollNo);
+//    }
 
     @Override
     public boolean equals(Object o) {

@@ -20,9 +20,9 @@ public class Driver {
 
     public static void main(String[] args) {
 	
-	System.out.println("Natural Sorting Order : ");
-	naturalSorting();
-	
+//	System.out.println("Natural Sorting Order : ");
+//	naturalSorting();
+//	
 	System.out.println("------------------------------------------------------------");
 	System.out.println(">> Enter the field by which to sort : ");
 	
@@ -40,10 +40,10 @@ public class Driver {
 	
     }
 
-    private static void naturalSorting() {
-	Collections.sort(students);
-	students.stream().forEach(System.out::println);
-
-    }
+//    private static void naturalSorting() {
+//	Collections.sort(students);
+//	students.stream().forEach(System.out::println);
+//
+//    }
 
 }

@@ -8,7 +8,6 @@ import io.priyak.genericcomparator.model.Student;
 
 public class DummyStudentList {
     
-    private static final String country = "India";
     
     private DummyStudentList() {
 	
@@ -22,7 +21,7 @@ public class DummyStudentList {
 	student1.setRollNo(1000);
 	student1.setFirstName("Amit");
 	student1.setLastName("Shah");
-	address1.setCountry("India");
+	address1.setCountry("Zimbabwe");
 	student1.setAddress(address1);
 
 	students.add(student1);

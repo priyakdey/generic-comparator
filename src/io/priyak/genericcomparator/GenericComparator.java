@@ -39,13 +39,10 @@ public class GenericComparator<T> implements Comparator<T> {
 
     @Override
     public int compare(T o1, T o2) {
-	return getComparator(o1, o2);
-    }
-    
-    public int getComparator(T o1, T o2) {
 	return this.invokeGetter(o1).compareTo(this.invokeGetter(o2));
     }
     
+
     public <U extends Comparable<U>> U invokeGetter(Object o) {
 	PropertyDescriptor pd;
 	U field = null;
